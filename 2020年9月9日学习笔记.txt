@@ -1,0 +1,57 @@
+一、第一个C#程序
+	1、C#程序的主体结构
+		- 命名空间生命（Namespace declaration）
+		- 一个Class
+		- Class属性
+		- 一个Main方法
+		- 语句（Statements）& 表达式（Expressions）
+		- 注释
+	
+	2、打印Hello World的小程序
+		实例：
+			using System;
+			namespace HelloWorldApplication
+			{
+				class HelloWorld
+				{
+					static void Main(string[] args)
+					{
+						/* 我的第一个 C# 程序*/
+						Console.WriteLine("Hello World");
+						Console.ReadKey();
+					}
+				}
+			}
+	
+	3、运行结果：
+		Hello World
+	
+	总结：
+		using System; -using 关键字用于在程序中包含 System 命名空间，一个程序一般有多个 using 语句。
+		namespace 声明。 一个namespace 里包含了一系列的类。HelloWorldApplication 命名空间包含了类 HelloWorld。
+		class 声明。类 HelloWorld 包含了程序使用的数据和方法声明。类一般包含多个方法。方法定义了类的行为。
+			在这里 HelloWorld 类只有一个 Main 方法。
+		定义 Main 方法，是所有 C# 程序的“入口点”。Main 方法说明当执行时类将做什么动作。
+		/**/ 内的内容将会被编辑器忽略，并且它会在程序中添加额外的注释。
+		Main 方法通过语句 Console.WriateLine("Hello World");指定了它的行为。
+			WriteLine 是一个定义在 System 库当中 Console 类的方法。此方法会在屏幕上显示 "Hello World"。
+			Console.ReadKey(); 是针对 VS.NET 用户的。这使得程序回等待一个按键的动作，防止程序从 Visual Studio
+			.NET 启动时屏幕会快速运行并关闭。
+
+	注意：
+		- C# 区分大小写
+		- 所有语句和表达式必须以 ";" 结尾
+		- 程序的执行从 Main 方法开始
+		- 与 Java 不同，文件名可以与类名不同
+
+	课外小知识：
+		编译 & 执行 C# 程序
+			- 启动 Visual Studio
+			- 在菜单栏上，选择 File -> New -> Project
+			- 从模板中选择 Visual C#，然后选择 Windows
+			- 选择 Console Application
+			- 添加一个项目名称
+			- 新项目会出现在解决方案资源管理器 (Solution Explorer) 中
+			- 在代码编辑器 (Code Editor) 中编写代码
+			- 点击 Run 按钮或者按 F5 键来运行程序。回出现一个命令提示符窗口 (Command Prompt window)，显示 Hello world
+			
